@@ -2,6 +2,7 @@
 
 import React, { useRef, useState } from 'react';
 import ReactPlayer from 'react-player';
+import OrderBtn from './OrderBtn';
 
 const Video = () => {
     const [isPlaying, setIsPlaying] = useState(false); // Track video play state
@@ -10,7 +11,7 @@ const Video = () => {
         setIsPlaying(true); // Start video playback
     };
     return (
-        <div className='bg-[url("/BgRed.png")] relative pb-[30px] mb-[30px]'>
+        <div className=' bg-[#B52555] relative pb-[30px] mb-[30px]'>
             <h1 className='text-center text-[49px] pt-[20px] font-bold text-white'>কিনুন একবার-<span className='text-[#FFFF00]'>ব্যবহার করুন বারবার!</span></h1>
              {/* Video Container */}
              <div className="relative mt-5 mx-auto md:w-[890px] md:h-[500px] rounded-2xl">
@@ -36,10 +37,7 @@ const Video = () => {
             </div>
             <h1 className='md:w-[1200px] text-center mx-auto text-[34px] font-medium text-white leading-[60px] mt-[30px]'>অন্যান্য ডায়াপারের মত বারবার কেনার ঝামেলা নাই। কম দামে, নকল ডায়াপার কিনে নিজের লস করতে না চাইলে ভিডিও টি সম্পূর্ন দেখুন।</h1>
             <h1 className='text-center text-[#FFFF00] font-semibold text-[28px]'>4 পিস ডাইপার ৯৯৯ টাকা ডেলিভারি চার্জ ফ্রি</h1>
-            <button className='flex items-center justify-center mx-auto gap-5 bg-[#F97114] px-[15px] py-[10px] rounded-xl mt-[20px]'>
-                <img src="/order.svg" alt="" className='w-[40px]' />
-                <h1 className='text-[30px] font-semibold text-white'>অর্ডার করুন</h1>
-            </button>
+           <OrderBtn/>
         </div>
     );
 };
