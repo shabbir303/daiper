@@ -12,58 +12,71 @@ import 'swiper/css/navigation';
 import './slider.css';
 
 // import required modules
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination, Navigation, Autoplay } from 'swiper/modules';
+import Image from 'next/image';
 
 export default function Slider() {
   const [swiperRef, setSwiperRef] = useState(null);
 
-  let appendNumber = 4;
-  let prependNumber = 1;
+  // let appendNumber = 4;
+  // let prependNumber = 1;
 
-  const prepend2 = () => {
-    swiperRef.prependSlide([
-      '<div class="swiper-slide">Slide ' + --prependNumber + '</div>',
-      '<div class="swiper-slide">Slide ' + --prependNumber + '</div>',
-    ]);
-  };
+  // const prepend2 = () => {
+  //   swiperRef.prependSlide([
+  //     '<div class="swiper-slide">Slide ' + --prependNumber + '</div>',
+  //     '<div class="swiper-slide">Slide ' + --prependNumber + '</div>',
+  //   ]);
+  // };
 
-  const prepend = () => {
-    swiperRef.prependSlide(
-      '<div class="swiper-slide">Slide ' + --prependNumber + '</div>'
-    );
-  };
+  // const prepend = () => {
+  //   swiperRef.prependSlide(
+  //     '<div class="swiper-slide">Slide ' + --prependNumber + '</div>'
+  //   );
+  // };
 
-  const append = () => {
-    swiperRef.appendSlide(
-      '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>'
-    );
-  };
+  // const append = () => {
+  //   swiperRef.appendSlide(
+  //     '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>'
+  //   );
+  // };
 
-  const append2 = () => {
-    swiperRef.appendSlide([
-      '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>',
-      '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>',
-    ]);
-  };
+  // const append2 = () => {
+  //   swiperRef.appendSlide([
+  //     '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>',
+  //     '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>',
+  //   ]);
+  // };
 
   return (
     <>
       <Swiper
-        onSwiper={setSwiperRef}
-        slidesPerView={3}
+        slidesPerView={3} // Display 3 slides at a time
         centeredSlides={true}
         spaceBetween={30}
-        pagination={{
-          type: 'fraction',
+        loop={true} // Enable infinite loop
+        autoplay={{
+          delay: 2500, // Autoplay delay in milliseconds
+          disableOnInteraction: false, // Autoplay continues after interaction
         }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        className="mySwiper "
+        // pagination={{
+        //   type: "fraction",
+        // }}
+        modules={[Pagination, Autoplay]}
+        className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide className='rounded-xl'> <Image src="/blueDi.jpeg" alt='buledi'
+          fill
+          className='object-cover rounded-xl' /> </SwiperSlide>
+        <SwiperSlide className='rounded-xl'> <Image src="/lightDi.jpeg" alt='light'
+          fill
+          className='object-cover rounded-xl' /> </SwiperSlide>
+        <SwiperSlide className='rounded-xl'> <Image src="/redDi.jpeg" alt='red'
+          fill
+          className='object-cover rounded-xl' /> </SwiperSlide>
+        <SwiperSlide className='rounded-xl'> <Image src="/yellowDi.jpeg" alt='yellowdi'
+          fill
+          className='object-cover rounded-xl' /> </SwiperSlide>
+        
       </Swiper>
 
     </>
