@@ -58,7 +58,7 @@ export default function Slider() {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper md:w-[1200px]"
+        className="mySwiper "
       >
         <SwiperSlide>Slide 1</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
@@ -66,20 +66,6 @@ export default function Slider() {
         <SwiperSlide>Slide 4</SwiperSlide>
       </Swiper>
 
-      {/* <p className="append-buttons">
-        <button onClick={() => prepend2()} className="prepend-2-slides">
-          Prepend 2 Slides
-        </button>
-        <button onClick={() => prepend()} className="prepend-slide">
-          Prepend Slide
-        </button>
-        <button onClick={() => append()} className="append-slide">
-          Append Slide
-        </button>
-        <button onClick={() => append2()} className="append-2-slides">
-          Append 2 Slides
-        </button>
-      </p> */}
     </>
   );
 }
