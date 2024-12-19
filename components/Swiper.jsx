@@ -61,6 +61,11 @@ export default function Slider() {
         // pagination={{
         //   type: "fraction",
         // }}
+        breakpoints={{
+          320: { slidesPerView: 1 }, // Small screens: 1 slide
+          768: { slidesPerView: 2 }, // Medium screens: 2 slides
+          1024: { slidesPerView: 3 }, // Large screens: 3 slides
+      }}
         modules={[Pagination, Autoplay]}
         className="mySwiper"
       >

@@ -6,7 +6,9 @@ import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import Link from "next/link";
 import { useRouter } from 'next/navigation';
-// import { FcEndCall } from "react-icons/fc";
+import { SlCallOut } from "react-icons/sl";
+
+
 
 
 const OrderForm = () => {
@@ -48,11 +50,11 @@ const OrderForm = () => {
   return (
     <>
       <div>
-        <h1 className="text-center text-[30px] font-bold bg-[#B52555] md:w-[1200px] mx-auto my-[100px] text-white rounded-xl">
+        <h1 className="text-center text-[20px]  md:text-[30px] font-bold bg-[#B52555] md:w-[1200px] mx-auto mt-[100px] mb-[30px] text-white rounded-xl">
           অর্ডার করতে নিচের ফর্মে আপনার নাম, পূর্ণ ঠিকানা এবং মোবাইল নাম্বার লিখুন।
         </h1>
       </div>
-      <div className="flex flex-col md:flex-row justify-between px-8 py-8 bg-gray-100">
+      <div className="flex flex-col md:flex-row justify-between px-8 py-8 bg-gray-100" id="order-section">
         {/* Left Section - Form */}
         <div className="w-full md:w-1/2 pr-8">
           <h2 className="text-2xl font-bold mb-4">অর্ডারের তথ্য</h2>
@@ -181,11 +183,13 @@ const OrderForm = () => {
             </p>
           </div>
 
-          <div className="bg-gray-100 p-4 rounded-md shadow-md mt-3 flex items-center">
+          <div className="bg-gray-100 p-4 rounded-md shadow-md mt-3 flex flex-wrap items-center gap-[20px]">
             <h1 className="text-lg font-bold text-gray-800">প্রয়োজনে কল করুন</h1>
-            <div>
-              <h1>
+            <div className="flex items-center gap-2">
+              <h1 className="text-[25px] text-green-700">
+              <SlCallOut /> 
               </h1>
+              <h2 className="text-[20px] font-semibold">01794638464</h2>
             </div>
           </div>
         </div>

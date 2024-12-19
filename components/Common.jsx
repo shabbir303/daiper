@@ -20,7 +20,7 @@ const Common = () => {
 ]
     return (
         <div className='md:w-[1200px] mx-auto my-[100px]'>
-             <h1 className='text-center text-[30px] font-bold bg-[#B52555]  mt-[50px] text-white rounded-xl'>কিছু কমন প্রশ্নের উত্তর</h1>
+             <h1 className='text-center text-[25px] md:text-[30px] font-bold bg-[#B52555]  mt-[50px] text-white rounded-xl'>কিছু কমন প্রশ্নের উত্তর</h1>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-[10px] mt-[20px]'>
                 {que.map((que,index)=>{
                     return <div key={index} className='p-4 border-2 border-[#B52555] rounded-xl'>

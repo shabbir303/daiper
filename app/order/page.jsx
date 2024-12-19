@@ -1,14 +1,15 @@
+import OrderForm from "@/components/OrderForm";
 import React from "react";
 
-const OrderForm = () => {
+const Order = () => {
   return (
     <>
-      <div>
+      {/* <div>
       <h1 className='text-center text-[30px] font-bold bg-[#7B00AD] md:w-[1200px] mx-auto my-[100px] text-white rounded-xl'>অর্ডার করতে নিচের ফর্মে আপনার নাম, পূর্ণ ঠিকানা এবং মোবাইল নাম্বার লিখুন।</h1>
-      </div>
-      <div className="flex flex-col md:flex-row justify-between px-8 py-8 bg-gray-100 ">
+      </div> */}
+      {/* <div className="flex flex-col md:flex-row justify-between px-8 py-8 bg-gray-100 ">
         
-      {/* Left Section - Form */}
+      
       <div className="w-full md:w-1/2 pr-8">
         <h2 className="text-2xl font-bold mb-4">অর্ডারের তথ্য</h2>
         <form className="space-y-4">
@@ -68,7 +69,7 @@ const OrderForm = () => {
       </div>
 
       {/* Right Section - Order Summary */}
-      <div className="w-full md:w-1/2 mt-8 md:mt-0">
+      {/* <div className="w-full md:w-1/2 mt-8 md:mt-0">
         <h2 className="text-2xl font-bold mb-4">আপনার অর্ডার</h2>
         <div className="border p-4 rounded bg-white shadow-md">
           <div className="flex justify-between mb-2">
@@ -97,7 +98,7 @@ const OrderForm = () => {
           </div>
         </div>
 
-        {/* Payment Section */}
+        
         <div className="bg-gray-100 p-4 rounded mt-4">
           <p className="font-bold mb-2">ক্যাশ অন ডেলিভারি</p>
           <p className="text-gray-600 mb-2">
@@ -105,15 +106,17 @@ const OrderForm = () => {
           </p>
         </div>
 
-        {/* Confirm Button */}
+   
         <button className="w-full mt-4 py-3 bg-purple-600 text-white rounded font-bold hover:bg-purple-700">
           কনফার্ম অর্ডার ৳ 999.00
         </button>
       </div>
-    </div>
+    </div>  */}
+
+    <OrderForm/>
     
     </>
   );
 };
 
-export default OrderForm;
+export default Order;
