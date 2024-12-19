@@ -155,11 +155,11 @@ const OrderForm = () => {
                 />
                 <p className="text-gray-700">(৪ পিস) রি-ইউজেবল বেবি ডায়াপার</p>
               </div>
-              <p className="text-gray-800 font-bold">৳ ৯৫০.০০</p>
+              <p className="text-gray-800 font-bold">৳ ৯৯৯.০০</p>
             </div>
             <div className="flex justify-between border-t pt-2">
               <p className="text-gray-600">Subtotal</p>
-              <p>৳ ৯৫০.০০</p>
+              <p>৳ ৯৯৯.০০</p>
             </div>
             <div className="flex justify-between">
               <p className="text-gray-600">Shipping</p>
@@ -167,7 +167,7 @@ const OrderForm = () => {
             </div>
             <div className="flex justify-between font-bold text-lg border-t pt-2">
               <p>Total</p>
-              <p>৳ ৯৫০.০০</p>
+              <p>৳ ৯৯৯.০০</p>
             </div>
           </div>
 

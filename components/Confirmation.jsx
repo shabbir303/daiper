@@ -16,7 +16,7 @@ const Confirmation = () => {
             </div>
             <div className="flex justify-between items-center mt-2">
               <span className="text-gray-600 font-medium">Subtotal:</span>
-              <span className="text-gray-800">৳ ৯৫০.০০</span>
+              <span className="text-gray-800">৳ ৯৯৯.০০</span>
             </div>
             <div className="flex justify-between items-center mt-2">
               <span className="text-gray-600 font-medium">Shipping:</span>
@@ -28,7 +28,7 @@ const Confirmation = () => {
             </div>
             <div className="flex justify-between items-center mt-4 border-t pt-4 border-gray-300">
               <span className="text-gray-600 font-semibold">Total:</span>
-              <span className="text-gray-800 font-bold">৳ ৯৫০.০০</span>
+              <span className="text-gray-800 font-bold">৳ ৯৯৯.০০</span>
             </div>
           </div>
         </div>

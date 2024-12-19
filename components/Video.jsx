@@ -36,7 +36,7 @@ const Video = () => {
                 )} */}
             </div>
             <h1 className='md:w-[1200px] text-center mx-auto text-[20px] md:text-[34px] font-medium text-white md:leading-[60px] mt-[30px]'>অন্যান্য ডায়াপারের মত বারবার কেনার ঝামেলা নাই। কম দামে, নকল ডায়াপার কিনে নিজের লস করতে না চাইলে ভিডিও টি সম্পূর্ন দেখুন।</h1>
-            <h1 className='text-center text-[#FFFF00] font-semibold text-[28px]'>4 পিস ডাইপার ৯৯৯ টাকা ডেলিভারি চার্জ ফ্রি</h1>
+            <h1 className='text-center text-[#FFFF00] font-semibold text-[28px]'>৪ পিস ডাইপার ৯৯৯ টাকা ডেলিভারি চার্জ ফ্রি</h1>
            <OrderBtn/>
         </div>
     );
