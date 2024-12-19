@@ -64,16 +64,16 @@ export default function Slider() {
         modules={[Pagination, Autoplay]}
         className="mySwiper"
       >
-        <SwiperSlide className='rounded-xl'> <Image src="/blueDi.jpeg" alt='buledi'
+        <SwiperSlide className='rounded-xl'> <Image src="/d1.jpg" alt='buledi'
           fill
           className='object-cover rounded-xl' /> </SwiperSlide>
-        <SwiperSlide className='rounded-xl'> <Image src="/lightDi.jpeg" alt='light'
+        <SwiperSlide className='rounded-xl'> <Image src="/d2.jpg" alt='light'
           fill
           className='object-cover rounded-xl' /> </SwiperSlide>
-        <SwiperSlide className='rounded-xl'> <Image src="/redDi.jpeg" alt='red'
+        <SwiperSlide className='rounded-xl'> <Image src="/d3.jpg" alt='red'
           fill
           className='object-cover rounded-xl' /> </SwiperSlide>
-        <SwiperSlide className='rounded-xl'> <Image src="/yellowDi.jpeg" alt='yellowdi'
+        <SwiperSlide className='rounded-xl'> <Image src="/d4.jpg" alt='yellowdi'
           fill
           className='object-cover rounded-xl' /> </SwiperSlide>
         

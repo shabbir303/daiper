@@ -1,4 +1,5 @@
 import Common from "@/components/Common";
+import Footer from "@/components/Footer";
 import OrderForm from "@/components/OrderForm";
 import Que from "@/components/Que";
 import Variation from "@/components/Variation";
@@ -14,6 +15,7 @@ export default function Home() {
       <Variation/>
       <Common/>
       <OrderForm/>
+      <Footer/>
       </div>
     </div>
   );
